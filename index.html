@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agenda tu visita al Showroom | Tu Casa Fácil</title>
+<meta name="description" content="Recorre casas reales en Panel SIP, sal con tu cotización el mismo día y conoce el beneficio para visitas agendadas. Showroom en San Bernardo y Llanquihue. Agenda tu visita por WhatsApp.">
+<link rel="canonical" href="https://showroom.tucasafacil.cl/">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0B0D10">
+
+<!-- Open Graph / Social -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CL">
+<meta property="og:site_name" content="Tu Casa Fácil">
+<meta property="og:title" content="Camina dentro de tu futura casa. Agenda tu visita al showroom.">
+<meta property="og:description" content="Casas reales en Panel SIP que puedes recorrer, tocar y medir. Cotización el mismo día. San Bernardo y Llanquihue.">
+<meta property="og:url" content="https://showroom.tucasafacil.cl/">
+<meta property="og:image" content="https://showroom.tucasafacil.cl/assets/og-showroom.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+<!-- ===================== GOOGLE ANALYTICS 4 (activo) ===================== -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J12VB8HEGJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-J12VB8HEGJ');
+</script>
+
+<!-- ===================== META PIXEL (pegar ID y descomentar) =====================
+  Reemplaza 000000000000000 por el ID del pixel y quita los comentarios.
+<script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init','000000000000000');fbq('track','PageView');
+</script>
+================================================================================ -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Tu Casa Fácil",
+  "description": "Casas industrializadas de alto estándar en Panel SIP. Showroom en San Bernardo y Llanquihue.",
+  "url": "https://www.tucasafacil.cl",
+  "telephone": "+56930094515",
+  "email": "ventas@tucasafacil.cl",
+  "priceRange": "$$",
+  "location": [
+    {
+      "@type": "Place",
+      "name": "Showroom San Bernardo",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Pdte. Jorge Alessandri Rodríguez 20185",
+        "addressLocality": "San Bernardo",
+        "addressRegion": "Región Metropolitana",
+        "addressCountry": "CL"
+      },
+      "openingHoursSpecification": [
+        {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:30","closes":"18:00"},
+        {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"09:00","closes":"17:00"},
+        {"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"10:00","closes":"16:00"}
+      ]
+    },
+    {
+      "@type": "Place",
+      "name": "Showroom Llanquihue",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Parcela A, Fundo Totoral, Ruta 5 Sur Km 993",
+        "addressLocality": "Llanquihue",
+        "addressRegion": "Los Lagos",
+        "addressCountry": "CL"
+      },
+      "openingHoursSpecification": [
+        {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday"],"opens":"09:30","closes":"18:00"},
+        {"@type":"OpeningHoursSpecification","dayOfWeek":"Friday","opens":"09:30","closes":"17:00"},
+        {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"10:30","closes":"16:30"}
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+/* ============================================================
+   TU CASA FÁCIL · Landing de conversión — Showroom
+   Objetivo único: agendar visitas. CTA único: "Agenda tu visita".
+   Paleta de marca: negro + verde TCF + blanco hueso.
+   Los colores viven SOLO en este bloque :root.
+   ============================================================ */
+:root{
+  --ink:#0B0D10;            /* negro de marca */
+  --ink-2:#14171D;
+  --ink-3:#1E232B;
+  --bone:#F7F4EF;           /* blanco hueso */
+  --bone-2:#EBE6DC;
+  --accent:#58AE49;         /* VERDE TCF · rellenos, botones, acentos sobre negro */
+  --accent-h:#4B9A3D;       /* hover */
+  --accent-ink:#2F6B27;     /* verde oscuro · textos y acentos sobre fondo claro (AA) */
+  --accent-soft:rgba(88,174,73,.14);
+  --muted:#5D626C;
+  --muted-d:rgba(247,244,239,.62);
+  --line:rgba(11,13,16,.12);
+  --line-d:rgba(247,244,239,.14);
+  --r:18px;
+  --maxw:1180px;
+  --sans:'Manrope',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bone);color:var(--ink);
+  font-family:var(--sans);font-size:17px;line-height:1.6;
+  font-weight:450;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3,h4{margin:0;font-weight:800;letter-spacing:-.035em;line-height:1.03}
+p{margin:0}
+button,input,select,textarea{font:inherit;color:inherit}
+
+.wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 22px}
+.sec{padding:clamp(64px,9vw,120px) 0}
+.dark{background:var(--ink);color:var(--bone)}
+.dark h2,.dark h3{color:var(--bone)}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:9px;font-size:12.5px;font-weight:800;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--accent-ink);
+}
+.eyebrow::before{content:"";width:26px;height:1.5px;background:currentColor;display:block}
+.dark .eyebrow{color:var(--accent)}
+.h2{font-size:clamp(31px,4.6vw,55px)}
+.lead{font-size:clamp(17px,1.6vw,20px);color:var(--muted);max-width:62ch}
+.dark .lead{color:var(--muted-d)}
+
+/* ---------- Botones (CTA ÚNICO) ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:11px;
+  background:var(--accent);color:var(--ink);text-decoration:none;
+  padding:17px 30px;border:0;border-radius:100px;cursor:pointer;
+  font-weight:800;font-size:16.5px;letter-spacing:-.01em;
+  box-shadow:0 10px 26px -10px rgba(88,174,73,.7);
+  transition:transform .18s ease,background .18s ease,box-shadow .18s ease;
+  min-height:56px;
+}
+.btn:hover{background:var(--accent-h);transform:translateY(-2px);box-shadow:0 16px 34px -12px rgba(88,174,73,.75)}
+.btn:active{transform:translateY(0)}
+.btn:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.dark .btn:focus-visible{outline-color:var(--bone)}
+.btn-sm{padding:12px 22px;font-size:15px;min-height:46px}
+.btn-wide{width:100%}
+.btn svg{flex:0 0 auto}
+.btn-note{font-size:13.5px;color:var(--muted);display:flex;align-items:center;gap:7px}
+.dark .btn-note{color:var(--muted-d)}
+
+/* ---------- Header ---------- */
+header{
+  position:sticky;top:0;z-index:60;background:rgba(247,244,239,.86);
+  backdrop-filter:saturate(160%) blur(14px);border-bottom:1px solid var(--line);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;height:74px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{width:44px;height:auto;flex:0 0 auto}
+.brand-txt{display:flex;flex-direction:column;line-height:1.05}
+.brand-txt b{font-size:15.5px;font-weight:800;letter-spacing:-.02em}
+.brand-txt span{font-size:10.5px;font-weight:800;letter-spacing:.15em;text-transform:uppercase;color:var(--accent-ink)}
+.nav-right{display:flex;align-items:center;gap:16px}
+.nav-phone{display:none;font-size:14px;font-weight:700;text-decoration:none}
+@media(min-width:900px){.nav-phone{display:block}}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;padding:clamp(44px,6vw,78px) 0 clamp(56px,7vw,96px);overflow:hidden}
+.hero::before{
+  content:"";position:absolute;inset:-30% -20% auto -20%;height:80%;
+  background:radial-gradient(60% 60% at 30% 20%,var(--accent-soft),transparent 70%);
+  pointer-events:none;
+}
+.hero-grid{position:relative;display:grid;gap:clamp(36px,5vw,60px);align-items:center}
+@media(min-width:1000px){.hero-grid{grid-template-columns:1.02fr .98fr}}
+h1{font-size:clamp(38px,6.1vw,74px)}
+h1 em{font-style:normal;color:var(--accent-ink);display:block}
+.hero-sub{margin-top:22px;font-size:clamp(17px,1.7vw,20.5px);color:var(--muted);max-width:52ch}
+.hero-cta{margin-top:32px;display:flex;flex-wrap:wrap;align-items:center;gap:16px}
+.hero-trust{
+  margin-top:34px;padding-top:26px;border-top:1px solid var(--line);
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:20px;
+}
+.trust-i{display:flex;gap:11px;align-items:flex-start}
+.trust-i svg{flex:0 0 auto;margin-top:3px}
+.trust-i b{display:block;font-size:14.5px;font-weight:800;letter-spacing:-.015em}
+.trust-i span{font-size:13.5px;color:var(--muted);line-height:1.45}
+
+/* Hero visual */
+.hero-vis{position:relative}
+.shots{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.shot{
+  position:relative;border-radius:var(--r);overflow:hidden;background:var(--bone-2);
+  border:1px solid var(--line);box-shadow:0 26px 60px -30px rgba(11,13,16,.45);
+}
+.shot.tall{grid-column:1 / -1;aspect-ratio:4/3}
+.shot.small{aspect-ratio:1/1}
+.shot img{width:100%;height:100%;object-fit:cover;object-position:center}
+.shot-tag{
+  position:absolute;left:12px;bottom:12px;background:rgba(11,13,16,.86);color:var(--bone);
+  padding:7px 13px;border-radius:100px;font-size:12px;font-weight:700;
+  backdrop-filter:blur(6px);
+}
+.badge-float{
+  position:absolute;right:-6px;top:-18px;z-index:3;background:var(--ink);color:var(--bone);
+  border-radius:14px;padding:13px 17px;box-shadow:0 20px 40px -18px rgba(11,13,16,.7);
+  display:flex;align-items:center;gap:11px;
+}
+.badge-float b{display:block;font-size:19px;font-weight:800;letter-spacing:-.03em;line-height:1.1;color:var(--accent)}
+.badge-float span{font-size:11.5px;color:var(--muted-d)}
+.badge-dot{width:9px;height:9px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px rgba(88,174,73,.24);flex:0 0 auto}
+
+/* ---------- Strip ---------- */
+.strip{background:var(--ink);color:var(--bone);padding:22px 0}
+.strip-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px 10px;text-align:center}
+@media(min-width:760px){.strip-grid{grid-template-columns:repeat(4,1fr)}}
+.strip-i b{display:block;font-size:clamp(21px,2.9vw,29px);font-weight:800;letter-spacing:-.04em;color:var(--accent)}
+.strip-i span{font-size:13px;color:var(--muted-d)}
+
+/* ---------- PAS ---------- */
+.pas-head{max-width:820px}
+.pas-cards{margin-top:44px;display:grid;gap:16px}
+@media(min-width:820px){.pas-cards{grid-template-columns:repeat(3,1fr)}}
+.pas-c{background:var(--ink-2);border:1px solid var(--line-d);border-radius:var(--r);padding:26px 24px}
+.pas-c .n{font-size:12px;font-weight:800;letter-spacing:.14em;color:var(--accent);text-transform:uppercase}
+.pas-c h3{margin-top:14px;font-size:19.5px;letter-spacing:-.025em}
+.pas-c p{margin-top:10px;font-size:15.5px;color:var(--muted-d);line-height:1.55}
+.bridge{
+  margin-top:40px;background:linear-gradient(120deg,var(--accent),#3E8A31);border-radius:var(--r);
+  padding:clamp(28px,4vw,44px);display:grid;gap:24px;align-items:center;color:var(--ink);
+}
+@media(min-width:900px){.bridge{grid-template-columns:1fr auto}}
+.bridge h3{font-size:clamp(22px,2.8vw,32px);color:var(--ink) !important;letter-spacing:-.03em}
+.bridge p{margin-top:10px;font-size:16.5px;color:rgba(11,13,16,.78);max-width:56ch}
+.bridge .btn{background:var(--ink);color:var(--bone);box-shadow:0 14px 30px -14px rgba(0,0,0,.5)}
+.bridge .btn:hover{background:#fff;color:var(--ink)}
+
+/* ---------- Qué pasa en la visita ---------- */
+.visit{display:grid;gap:16px;margin-top:46px}
+@media(min-width:860px){.visit{grid-template-columns:repeat(3,1fr)}}
+.v-c{
+  background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:28px 25px;
+  transition:transform .2s ease,box-shadow .2s ease;
+}
+.v-c:hover{transform:translateY(-3px);box-shadow:0 22px 44px -26px rgba(11,13,16,.35)}
+.v-ico{width:46px;height:46px;border-radius:12px;background:var(--accent-soft);display:grid;place-items:center;color:var(--accent-ink)}
+.v-c h3{margin-top:18px;font-size:20px;letter-spacing:-.03em}
+.v-c p{margin-top:10px;font-size:15.5px;color:var(--muted);line-height:1.55}
+.v-c .stamp{
+  margin-top:16px;display:inline-block;font-size:12px;font-weight:800;letter-spacing:.06em;
+  text-transform:uppercase;color:var(--accent-ink);background:var(--accent-soft);
+  padding:6px 11px;border-radius:100px;
+}
+.v-time{margin-top:26px;display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;font-size:14.5px;color:var(--muted)}
+.v-time b{color:var(--ink)}
+
+/* ---------- Modelos por showroom ---------- */
+.sede-block{margin-top:52px}
+.sede-block:first-of-type{margin-top:44px}
+.sede-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px 14px;padding-bottom:16px;border-bottom:2px solid var(--ink)}
+.sede-head h3{font-size:clamp(22px,2.7vw,30px)}
+.sede-head .pin{
+  display:inline-flex;align-items:center;gap:7px;font-size:12.5px;font-weight:800;
+  letter-spacing:.08em;text-transform:uppercase;color:var(--accent-ink);
+  background:var(--accent-soft);padding:6px 12px;border-radius:100px;
+}
+.sede-head .cnt{margin-left:auto;font-size:14px;font-weight:700;color:var(--muted)}
+.models{display:grid;gap:18px;margin-top:22px}
+@media(min-width:700px){.models{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1040px){.models.three{grid-template-columns:repeat(3,1fr)}}
+.m-c{
+  background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;
+  display:flex;flex-direction:column;transition:transform .2s ease,box-shadow .2s ease;
+}
+.m-c:hover{transform:translateY(-4px);box-shadow:0 26px 50px -28px rgba(11,13,16,.4)}
+.m-img{aspect-ratio:4/3;background:var(--bone-2);position:relative}
+.m-img img{width:100%;height:100%;object-fit:cover}
+.m-img .flag{
+  position:absolute;top:12px;left:12px;background:var(--accent);color:var(--ink);font-size:11.5px;
+  font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:6px 11px;border-radius:100px;
+}
+.m-c.wide{grid-column:1/-1}
+@media(min-width:700px){.m-c.wide{display:grid;grid-template-columns:1.15fr 1fr;align-items:stretch}}
+.m-c.wide .m-img{aspect-ratio:16/10;height:100%}
+.m-b{padding:22px 22px 26px;display:flex;flex-direction:column;justify-content:center;flex:1}
+.m-b h3{font-size:21px;letter-spacing:-.03em}
+.m-c.wide .m-b h3{font-size:clamp(22px,2.4vw,28px)}
+.m-sqm{margin-top:8px;font-size:14px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-ink)}
+.m-desc{margin-top:12px;font-size:15.5px;color:var(--muted);line-height:1.55}
+.m-meta{margin-top:16px;display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-size:12.5px;font-weight:700;background:var(--bone-2);padding:6px 12px;border-radius:100px;color:var(--ink)}
+.m-note{margin-top:32px;font-size:14px;color:var(--muted);text-align:center;max-width:76ch;margin-inline:auto}
+
+/* ---------- SIP ---------- */
+.sip-grid{display:grid;gap:clamp(34px,5vw,56px);align-items:center}
+@media(min-width:980px){.sip-grid{grid-template-columns:1fr 1fr}}
+.sip-nums{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.sip-n{background:var(--ink-2);border:1px solid var(--line-d);border-radius:var(--r);padding:24px 20px}
+.sip-n b{display:block;font-size:clamp(30px,4.4vw,44px);font-weight:800;letter-spacing:-.045em;color:var(--accent);line-height:1}
+.sip-n span{display:block;margin-top:9px;font-size:14px;color:var(--muted-d);line-height:1.45}
+.sip-list{margin:26px 0 0;padding:0;list-style:none;display:grid;gap:13px}
+.sip-list li{display:flex;gap:12px;font-size:16px;color:var(--muted-d);line-height:1.5}
+.sip-list svg{flex:0 0 auto;margin-top:4px;color:var(--accent)}
+.sip-list b{color:var(--bone);font-weight:700}
+
+/* ---------- Sedes ---------- */
+.sedes{display:grid;gap:22px;margin-top:42px}
+@media(min-width:880px){.sedes{grid-template-columns:1fr 1fr}}
+.sede-box{display:flex;flex-direction:column;gap:13px;align-items:flex-start}
+.sede{
+  background:#fff;border:1.5px solid var(--line);border-radius:var(--r);padding:28px 26px;
+  text-align:left;cursor:pointer;transition:border-color .18s ease,box-shadow .18s ease,transform .18s ease;
+  display:flex;flex-direction:column;gap:14px;width:100%;position:relative;
+}
+.sede input{position:absolute;opacity:0;width:1px;height:1px;margin:0}
+.sede:hover{transform:translateY(-2px);box-shadow:0 20px 40px -26px rgba(11,13,16,.32)}
+.sede.is-on,.sede:has(input:checked){border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft)}
+.sede:has(input:focus-visible){outline:3px solid var(--ink);outline-offset:3px}
+.sede-top{display:flex;align-items:flex-start;justify-content:space-between;gap:14px}
+.sede h3{font-size:22px;letter-spacing:-.03em}
+.sede .region{font-size:13px;font-weight:700;color:var(--muted)}
+.radio{width:24px;height:24px;border-radius:50%;border:2px solid var(--line);flex:0 0 auto;display:grid;place-items:center;margin-top:3px}
+.sede.is-on .radio,.sede:has(input:checked) .radio{border-color:var(--accent)}
+.radio i{width:11px;height:11px;border-radius:50%;background:var(--accent);transform:scale(0);transition:transform .18s ease}
+.sede.is-on .radio i,.sede:has(input:checked) .radio i{transform:scale(1)}
+.sede-rows{display:grid;gap:11px;font-size:15px;color:var(--muted);line-height:1.5}
+.sede-rows div{display:flex;gap:11px}
+.sede-rows svg{flex:0 0 auto;margin-top:3px;color:var(--accent-ink)}
+.sede-rows b{color:var(--ink);font-weight:700}
+.maplink{
+  align-self:flex-start;font-size:14px;font-weight:800;color:var(--accent-ink);text-decoration:none;
+  border-bottom:2px solid var(--accent-soft);padding-bottom:2px;
+}
+.maplink:hover{border-bottom-color:var(--accent)}
+
+/* ---------- Formulario ---------- */
+.form-sec{position:relative;overflow:hidden}
+.form-sec::before{
+  content:"";position:absolute;inset:auto -10% -40% -10%;height:70%;
+  background:radial-gradient(50% 60% at 50% 50%,rgba(88,174,73,.22),transparent 70%);
+}
+.form-grid{position:relative;display:grid;gap:clamp(34px,5vw,60px)}
+@media(min-width:980px){.form-grid{grid-template-columns:.92fr 1.08fr;align-items:start}}
+.form-copy h2{font-size:clamp(30px,4.2vw,48px)}
+.form-why{margin:28px 0 0;padding:0;list-style:none;display:grid;gap:14px}
+.form-why li{display:flex;gap:12px;font-size:16px;color:var(--muted-d);line-height:1.5}
+.form-why svg{flex:0 0 auto;margin-top:4px;color:var(--accent)}
+.form-card{
+  background:var(--bone);color:var(--ink);border-radius:22px;padding:clamp(26px,3.4vw,38px);
+  box-shadow:0 40px 80px -40px rgba(0,0,0,.75);
+}
+.form-card h3{font-size:23px;letter-spacing:-.03em}
+.form-card .fc-sub{margin-top:8px;font-size:14.5px;color:var(--muted)}
+.fields{margin-top:24px;display:grid;gap:16px}
+.two{display:grid;gap:16px}
+@media(min-width:560px){.two{grid-template-columns:1fr 1fr}}
+label{display:block;font-size:13px;font-weight:800;margin-bottom:7px}
+label .opt{font-weight:600;color:var(--muted)}
+input,select{
+  width:100%;padding:14px 15px;border:1.5px solid var(--line);border-radius:12px;
+  background:#fff;font-size:16px;transition:border-color .16s ease,box-shadow .16s ease;min-height:52px;
+}
+select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%235D626C' stroke-width='2.5' stroke-linecap='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 15px center;padding-right:42px}
+input:focus,select:focus{outline:0;border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft)}
+input[aria-invalid="true"]{border-color:#C0392B;box-shadow:0 0 0 4px rgba(192,57,43,.12)}
+.err{display:none;margin-top:6px;font-size:13px;font-weight:700;color:#C0392B}
+input[aria-invalid="true"] ~ .err{display:block}
+.form-foot{margin-top:24px;display:grid;gap:13px;justify-items:center}
+.legal{font-size:12.5px;color:var(--muted);text-align:center;line-height:1.5}
+.legal a{color:var(--accent-ink)}
+
+/* ---------- FAQ ---------- */
+.faq{margin-top:40px;max-width:860px;margin-inline:auto}
+details{border-bottom:1px solid var(--line);padding:4px 0}
+summary{cursor:pointer;list-style:none;padding:20px 44px 20px 0;position:relative;font-size:17.5px;font-weight:700;letter-spacing:-.02em}
+summary::-webkit-details-marker{display:none}
+summary::after{
+  content:"";position:absolute;right:6px;top:50%;width:11px;height:11px;
+  border-right:2.5px solid var(--accent-ink);border-bottom:2.5px solid var(--accent-ink);
+  transform:translateY(-70%) rotate(45deg);transition:transform .2s ease;
+}
+details[open] summary::after{transform:translateY(-30%) rotate(225deg)}
+details p{padding:0 6px 22px 0;font-size:16px;color:var(--muted);line-height:1.6;max-width:70ch}
+
+/* ---------- Cierre + Footer ---------- */
+.close-sec{text-align:center}
+.close-sec h2{font-size:clamp(30px,4.8vw,56px);max-width:20ch;margin-inline:auto}
+.close-sec .lead{margin:20px auto 0;text-align:center}
+.close-sec .btn{margin-top:32px}
+footer{background:var(--ink);color:var(--muted-d);padding:52px 0 120px;border-top:1px solid var(--line-d)}
+@media(min-width:900px){footer{padding-bottom:52px}}
+.f-grid{display:grid;gap:26px}
+@media(min-width:760px){.f-grid{grid-template-columns:1.2fr 1fr 1fr}}
+.f-brand img{width:56px;margin-bottom:14px;filter:brightness(0) invert(1)}
+.f-grid h4{font-size:13px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--bone);margin-bottom:12px}
+.f-grid p,.f-grid a{font-size:14.5px;line-height:1.6;text-decoration:none}
+.f-grid a:hover{color:var(--accent)}
+.f-links{display:grid;gap:7px}
+.f-bot{margin-top:38px;padding-top:24px;border-top:1px solid var(--line-d);font-size:13px;display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space-between}
+
+/* ---------- Sticky CTA mobile ---------- */
+.sticky{
+  position:fixed;left:0;right:0;bottom:0;z-index:70;padding:12px 16px calc(12px + env(safe-area-inset-bottom));
+  background:rgba(11,13,16,.93);backdrop-filter:blur(12px);border-top:1px solid var(--line-d);
+  display:flex;gap:12px;align-items:center;
+  transform:translateY(120%);transition:transform .3s cubic-bezier(.2,.7,.3,1);
+}
+.sticky.on{transform:translateY(0)}
+.sticky-txt{flex:1;min-width:0}
+.sticky-txt b{display:block;color:var(--bone);font-size:14px;font-weight:800;letter-spacing:-.02em}
+.sticky-txt span{display:block;color:var(--muted-d);font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+@media(min-width:900px){.sticky{display:none}}
+
+/* ---------- Reveal ---------- */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s cubic-bezier(.2,.7,.3,1)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  .rv{opacity:1;transform:none;transition:none}
+  html{scroll-behavior:auto}
+  .btn,.v-c,.m-c,.sede,.sticky{transition:none}
+}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+</style>
+</head>
+<body>
+
+<a class="sr-only" href="#agendar">Saltar al formulario para agendar tu visita</a>
+
+<!-- ======================= HEADER ======================= -->
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top">
+      <img src="assets/logo-tcf-180.png" alt="Tu Casa Fácil" width="44" height="37">
+      <span class="brand-txt"><b>TU CASA FÁCIL</b><span>Showroom</span></span>
+    </a>
+    <div class="nav-right">
+      <a class="nav-phone" href="tel:+56930094515">+56 9 3009 4515</a>
+      <a class="btn btn-sm" href="#agendar" data-cta="header">Agenda tu visita</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ======================= HERO ======================= -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Showroom San Bernardo · Llanquihue</span>
+      <h1 style="margin-top:20px">Camina dentro de tu casa <em>antes de comprarla.</em></h1>
+      <p class="hero-sub">Nuestras casas en Panel SIP están montadas y abiertas. Entra, mide, abre las puertas, siente la temperatura por dentro. Y sal el mismo día con tu cotización en la mano.</p>
+
+      <div class="hero-cta">
+        <a class="btn" href="#agendar" data-cta="hero">
+          Agenda tu visita
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <span class="btn-note">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.4A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.2 14.8l-.4-.2-2.7.7.7-2.6-.2-.4A8 8 0 0 1 12 4z"/></svg>
+          Coordinamos por WhatsApp en minutos
+        </span>
+      </div>
+
+      <div class="hero-trust">
+        <div class="trust-i">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="var(--accent-ink)" stroke-width="2.3" stroke-linecap="round"><path d="M3 21h18M5 21V8l7-5 7 5v13M10 21v-6h4v6"/></svg>
+          <div><b>Casas montadas, no renders</b><span>Recorres la vivienda terminada</span></div>
+        </div>
+        <div class="trust-i">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="var(--accent-ink)" stroke-width="2.3" stroke-linecap="round"><path d="M12 8v4l3 2"/><circle cx="12" cy="12" r="9"/></svg>
+          <div><b>60 a 90 minutos</b><span>Una visita, todas tus dudas</span></div>
+        </div>
+        <div class="trust-i">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="var(--accent-ink)" stroke-width="2.3" stroke-linecap="round"><rect x="2" y="5" width="20" height="14" rx="2.5"/><path d="M2 10h20"/></svg>
+          <div><b>Hasta 48 cuotas</b><span>Con tarjeta de crédito</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-vis">
+      <div class="badge-float" aria-hidden="true">
+        <span class="badge-dot"></span>
+        <span><b>7 días</b><span>San Bernardo abre lun a dom</span></span>
+      </div>
+      <div class="shots">
+        <div class="shot tall">
+          <img src="assets/borde-lago-130.webp" alt="Modelo Borde Lago de 130 m² de Tu Casa Fácil al atardecer" width="1200" height="900" loading="eager" fetchpriority="high">
+          <span class="shot-tag">Borde Lago · 130 m²</span>
+        </div>
+        <div class="shot small">
+          <img src="assets/llanquihue-218.webp" alt="Modelo Llanquihue de 218 m² de Tu Casa Fácil en un día de verano" width="1200" height="900" loading="lazy">
+          <span class="shot-tag">Llanquihue · 218 m²</span>
+        </div>
+        <div class="shot small">
+          <img src="assets/villa-costera-88.webp" alt="Modelo Villa Costera de 88 m² de Tu Casa Fácil junto a una piscina" width="1200" height="900" loading="lazy">
+          <span class="shot-tag">Villa Costera · 88 m²</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= STRIP ======================= -->
+<section class="strip">
+  <div class="wrap strip-grid">
+    <div class="strip-i"><b>2</b><span>showrooms abiertos</span></div>
+    <div class="strip-i"><b>4</b><span>casas montadas para recorrer</span></div>
+    <div class="strip-i"><b>50%</b><span>menos tiempo de obra*</span></div>
+    <div class="strip-i"><b>Todo Chile</b><span>entrega y montaje</span></div>
+  </div>
+</section>
+
+<!-- ======================= PAS ======================= -->
+<section class="sec dark">
+  <div class="wrap">
+    <div class="pas-head">
+      <span class="eyebrow">La parte más cara de comprar una casa</span>
+      <h2 class="h2" style="margin-top:20px">Nadie debería decidir dónde va a vivir mirando un catálogo.</h2>
+      <p class="lead" style="margin-top:20px">Todas las casas se ven bien en una foto renderizada. El problema aparece después: cuando la terminación no era la que imaginabas, cuando el precio “desde” creció, cuando el plazo se estiró tres meses. Y ya firmaste.</p>
+    </div>
+
+    <div class="pas-cards">
+      <div class="pas-c rv">
+        <span class="n">Objeción 1</span>
+        <h3>“No sé si la calidad es real”</h3>
+        <p>En una foto no se ve el espesor del muro, la carpintería ni cómo cierra una ventana. En el showroom lo tocas: abres, cierras, golpeas el muro y comparas.</p>
+      </div>
+      <div class="pas-c rv">
+        <span class="n">Objeción 2</span>
+        <h3>“El precio final nunca es el que dicen”</h3>
+        <p>Por eso no te mandamos un rango. Te sentamos con un especialista y armamos el presupuesto de tu proyecto, con tu terreno y tus terminaciones, el mismo día.</p>
+      </div>
+      <div class="pas-c rv">
+        <span class="n">Objeción 3</span>
+        <h3>“¿Y si el espacio me queda chico?”</h3>
+        <p>Los metros cuadrados en un plano engañan. Caminar 88 m² reales te dice en 5 minutos lo que un plano no te dice en una semana.</p>
+      </div>
+    </div>
+
+    <div class="bridge rv">
+      <div>
+        <h3>Se resuelve en una visita.</h3>
+        <p>Una hora en el showroom reemplaza semanas de dudas, cotizaciones que no se entienden y comparar fotos de la competencia.</p>
+      </div>
+      <a class="btn" href="#agendar" data-cta="pas">Agenda tu visita</a>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= QUÉ PASA EN LA VISITA ======================= -->
+<section class="sec">
+  <div class="wrap">
+    <span class="eyebrow">Qué incluye tu visita agendada</span>
+    <h2 class="h2" style="margin-top:20px;max-width:22ch">Tres cosas que solo pasan si vienes.</h2>
+
+    <div class="visit">
+      <div class="v-c rv">
+        <div class="v-ico"><svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V9l7-5.5L19 9v12M9.5 21v-5.5h5V21"/></svg></div>
+        <h3>Recorrido por casas reales</h3>
+        <p>Entras a las viviendas montadas, ves las terminaciones, el mobiliario a escala y los distintos tipos de techo. Sin apuros y sin que nadie te persiga con un contrato.</p>
+        <span class="stamp">Casas montadas</span>
+      </div>
+      <div class="v-c rv">
+        <div class="v-ico"><svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3h8a2 2 0 0 1 2 2v16l-6-3-6 3V5a2 2 0 0 1 2-2z"/><path d="M9 8h6M9 12h4"/></svg></div>
+        <h3>Cotización el mismo día</h3>
+        <p>Un especialista revisa tu terreno, tu modelo y tus plazos, y te entrega el presupuesto por escrito antes de que te vayas. No “te llamamos la próxima semana”.</p>
+        <span class="stamp">Presupuesto por escrito</span>
+      </div>
+      <!-- ▼▼ BENEFICIO DE VISITA · edita este bloque si apruebas un descuento o regalo ▼▼ -->
+      <div class="v-c rv">
+        <div class="v-ico"><svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="13" rx="2"/><path d="M3 12h18M12 8v13M12 8S10.5 3 8 3a2.5 2.5 0 0 0 0 5M12 8s1.5-5 4-5a2.5 2.5 0 0 1 0 5"/></svg></div>
+        <h3>Beneficio para visitas agendadas</h3>
+        <p>Quien agenda antes de venir entra con hora reservada, asesoría técnica sin costo y el plano del modelo que le interese para llevarse. Sin fila y sin pagar nada.</p>
+        <span class="stamp">Solo agendando</span>
+      </div>
+      <!-- ▲▲ FIN BENEFICIO ▲▲ -->
+    </div>
+
+    <div class="v-time">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="var(--accent-ink)" stroke-width="2.4" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 2"/></svg>
+      <span>Duración estimada: <b>60 a 90 minutos</b></span>
+      <span>·</span>
+      <span>Puedes venir con familia, arquitecto o quien decida contigo</span>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= MODELOS POR SHOWROOM ======================= -->
+<section class="sec" style="background:var(--bone-2)" id="modelos">
+  <div class="wrap">
+    <span class="eyebrow">Algunos de los modelos que vas a ver</span>
+    <h2 class="h2" style="margin-top:20px;max-width:26ch">De 50 a 218 m², montadas y abiertas.</h2>
+
+    <!-- ---------- LLANQUIHUE ---------- -->
+    <div class="sede-block">
+      <div class="sede-head">
+        <span class="pin">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+          Llanquihue
+        </span>
+        <h3>En el Showroom de Llanquihue encontrarás</h3>
+        <span class="cnt">Región de Los Lagos</span>
+      </div>
+
+      <div class="models">
+        <article class="m-c wide rv">
+          <div class="m-img">
+            <img src="assets/llanquihue-218.webp" alt="Modelo Llanquihue 218 m² de Tu Casa Fácil, fachada frontal en un día de verano" width="1200" height="900" loading="lazy">
+            <span class="flag">Línea Llanquihue</span>
+          </div>
+          <div class="m-b">
+            <h3>Llanquihue 218 m²</h3>
+            <p class="m-sqm">218 m² construidos</p>
+            <p class="m-desc">El modelo más amplio de la línea. Volumen central de doble altura con ventanales de piso a cielo, dos alas laterales en revestimiento oscuro y terraza de madera integrada al living.</p>
+            <div class="m-meta">
+              <span class="chip">Doble altura</span>
+              <span class="chip">Techo a dos aguas</span>
+              <span class="chip">Ventanales piso a cielo</span>
+              <span class="chip">Terraza integrada</span>
+              <span class="chip">Panel SIP 114 mm</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- ---------- SAN BERNARDO ---------- -->
+    <div class="sede-block">
+      <div class="sede-head">
+        <span class="pin">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+          San Bernardo
+        </span>
+        <h3>En el Showroom de San Bernardo encontrarás</h3>
+        <span class="cnt">Región Metropolitana</span>
+      </div>
+
+      <div class="models three">
+        <article class="m-c rv">
+          <div class="m-img">
+            <img src="assets/borde-lago-130.webp" alt="Modelo Borde Lago 130 m² de Tu Casa Fácil con porche y estructura de madera a la vista" width="1200" height="900" loading="lazy">
+            <span class="flag">La más amplia</span>
+          </div>
+          <div class="m-b">
+            <h3>Borde Lago 130 m²</h3>
+            <p class="m-sqm">130 m² construidos</p>
+            <p class="m-desc">Casa de un piso en volúmenes quebrados, con porche cubierto de estructura de madera a la vista y ventanales corredera al jardín.</p>
+            <div class="m-meta">
+              <span class="chip">Un piso</span>
+              <span class="chip">Porche cubierto</span>
+              <span class="chip">Madera a la vista</span>
+              <span class="chip">Panel SIP 114 mm</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="m-c rv">
+          <div class="m-img">
+            <img src="assets/villa-costera-88.webp" alt="Modelo Villa Costera 88 m² de Tu Casa Fácil con deck y piscina" width="1200" height="900" loading="lazy">
+            <span class="flag">Techo galpón</span>
+          </div>
+          <div class="m-b">
+            <h3>Villa Costera 88 m²</h3>
+            <p class="m-sqm">88 m² construidos</p>
+            <p class="m-desc">Planta alargada de un piso con fachada continua de ventanales, deck perimetral y revestimiento oscuro. Pensada para terrenos con vista.</p>
+            <div class="m-meta">
+              <span class="chip">Un piso</span>
+              <span class="chip">Deck perimetral</span>
+              <span class="chip">Fachada de ventanales</span>
+              <span class="chip">Panel SIP 114 mm</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="m-c rv">
+          <div class="m-img">
+            <img src="assets/refugio-50.webp" alt="Modelo Refugio 50 m² de Tu Casa Fácil, volumen compacto con revestimiento oscuro" width="1200" height="900" loading="lazy">
+            <span class="flag">Formato compacto</span>
+          </div>
+          <div class="m-b">
+            <h3>Refugio 50 m²</h3>
+            <p class="m-sqm">50 m² construidos</p>
+            <p class="m-desc">Volumen único de líneas rectas y techo plano, con gran paño vidriado y celosía de madera. Ideal como segunda vivienda, oficina o unidad de arriendo.</p>
+            <div class="m-meta">
+              <span class="chip">Monovolumen</span>
+              <span class="chip">Techo plano</span>
+              <span class="chip">Celosía de madera</span>
+              <span class="chip">Panel SIP 114 mm</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <p class="m-note">Estos son los modelos que están montados hoy en cada showroom. La distribución interior, la cantidad de dormitorios y baños y las alternativas de terminación las revisas en la ficha técnica durante la visita, junto a tu asesor.</p>
+  </div>
+</section>
+
+<!-- ======================= PANEL SIP ======================= -->
+<section class="sec dark">
+  <div class="wrap sip-grid">
+    <div>
+      <span class="eyebrow">Por qué se siente distinta por dentro</span>
+      <h2 class="h2" style="margin-top:20px">Panel SIP: la razón por la que no vas a querer volver al metal con volcanita.</h2>
+      <p class="lead" style="margin-top:20px">Dos placas OSB APA de 11,1 mm con núcleo aislante de EPS. Muros de 114 mm que aíslan, resisten y se levantan en una fracción del tiempo. Esto no se explica: se siente cuando cruzas la puerta.</p>
+
+      <ul class="sip-list">
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 12.5l5 5L20 6.5"/></svg><span><b>Hasta 90% menos pérdida energética</b> frente a un muro convencional. Menos estufa, menos cuenta.</span></li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 12.5l5 5L20 6.5"/></svg><span><b>Estructura sismorresistente:</b> el sistema absorbe y difumina la energía de las ondas sísmicas.</span></li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 12.5l5 5L20 6.5"/></svg><span><b>Menos desperdicio de obra:</b> los paneles llegan cortados y dimensionados a medida.</span></li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 12.5l5 5L20 6.5"/></svg><span><b>Fabricación propia:</b> somos fábrica, no intermediarios. Eso define plazos y precio.</span></li>
+      </ul>
+    </div>
+
+    <div class="sip-nums">
+      <div class="sip-n rv"><b>50%</b><span>menos consumo anual de energía</span></div>
+      <div class="sip-n rv"><b>50%</b><span>menos tiempo de construcción</span></div>
+      <div class="sip-n rv"><b>114 mm</b><span>de muro exterior, techumbre y losa</span></div>
+      <div class="sip-n rv"><b>EPS 15</b><span>núcleo aislante en todo el panel</span></div>
+      <p style="grid-column:1/-1;font-size:12.5px;color:var(--muted-d);margin-top:4px">*Cifras de desempeño del sistema Panel SIP según especificación técnica de Tu Casa Fácil, comparadas con construcción tradicional.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= SEDES ======================= -->
+<section class="sec" id="sedes">
+  <div class="wrap">
+    <span class="eyebrow">Elige tu showroom</span>
+    <h2 class="h2" style="margin-top:20px;max-width:22ch">Dos sedes abiertas. También los fines de semana.</h2>
+    <p class="lead" style="margin-top:18px">Selecciona una sede y la dejamos lista en tu solicitud de visita.</p>
+
+    <div class="sedes">
+      <div class="sede-box">
+        <label class="sede is-on">
+          <input type="radio" name="sede-pick" value="San Bernardo (Región Metropolitana)" checked>
+          <div class="sede-top">
+            <div>
+              <h3>San Bernardo</h3>
+              <span class="region">Región Metropolitana · Casa matriz</span>
+            </div>
+            <span class="radio" aria-hidden="true"><i></i></span>
+          </div>
+          <div class="sede-rows">
+            <div><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" aria-hidden="true"><path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg><span>Av. Pdte. Jorge Alessandri Rodríguez 20185, San Bernardo</span></div>
+            <div><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 2"/></svg><span><b>Lun a Vie</b> 8:30–18:00 · <b>Sáb</b> 9:00–17:00 · <b>Dom</b> 10:00–16:00</span></div>
+            <div><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" aria-hidden="true"><path d="M3 21h18M5 21V9l7-5.5L19 9v12"/></svg><span>Borde Lago 130 m² · Villa Costera 88 m² · Refugio 50 m²</span></div>
+          </div>
+        </label>
+        <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Av.+Pdte.+Jorge+Alessandri+Rodriguez+20185+San+Bernardo" target="_blank" rel="noopener">Ver San Bernardo en Google Maps →</a>
+      </div>
+
+      <div class="sede-box">
+        <label class="sede">
+          <input type="radio" name="sede-pick" value="Llanquihue (Región de Los Lagos)">
+          <div class="sede-top">
+            <div>
+              <h3>Llanquihue</h3>
+              <span class="region">Región de Los Lagos</span>
+            </div>
+            <span class="radio" aria-hidden="true"><i></i></span>
+          </div>
+          <div class="sede-rows">
+            <div><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" aria-hidden="true"><path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg><span>Parcela A, Fundo Totoral, Ruta 5 Sur Km 993, Llanquihue</span></div>
+            <div><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 2"/></svg><span><b>Lun a Jue</b> 9:30–18:00 · <b>Vie</b> 9:30–17:00 · <b>Sáb</b> 10:30–16:30</span></div>
+            <div><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" aria-hidden="true"><path d="M3 21h18M5 21V9l7-5.5L19 9v12"/></svg><span>Llanquihue 218 m²</span></div>
+          </div>
+        </label>
+        <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Fundo+Totoral+Ruta+5+Sur+Km+993+Llanquihue" target="_blank" rel="noopener">Ver Llanquihue en Google Maps →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= FORMULARIO ======================= -->
+<section class="sec dark form-sec" id="agendar">
+  <div class="wrap form-grid">
+    <div class="form-copy">
+      <span class="eyebrow">Último paso</span>
+      <h2 style="margin-top:20px">Agenda tu visita en 30 segundos.</h2>
+      <p class="lead" style="margin-top:18px">Completa los datos y se abre WhatsApp con tu mensaje listo. Un asesor te confirma día y hora.</p>
+      <ul class="form-why">
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Sin formularios eternos y sin llamados insistentes.</span></li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Hora reservada: te atiende un asesor, no una fila.</span></li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Si no tienes terreno todavía, también te sirve venir.</span></li>
+      </ul>
+    </div>
+
+    <div class="form-card">
+      <h3>Agenda tu visita al showroom</h3>
+      <p class="fc-sub">Respondemos por WhatsApp dentro del horario de atención.</p>
+
+      <form id="f" novalidate>
+        <div class="fields">
+          <div>
+            <label for="nombre">Tu nombre</label>
+            <input id="nombre" name="nombre" type="text" autocomplete="given-name" placeholder="Ej: Pamela Flores" required>
+            <p class="err">Escribe tu nombre para que el asesor te salude bien.</p>
+          </div>
+
+          <div class="two">
+            <div>
+              <label for="sede">Showroom</label>
+              <select id="sede" name="sede">
+                <option value="San Bernardo (Región Metropolitana)">San Bernardo, RM</option>
+                <option value="Llanquihue (Región de Los Lagos)">Llanquihue, Los Lagos</option>
+              </select>
+            </div>
+            <div>
+              <label for="cuando">¿Cuándo te acomoda?</label>
+              <select id="cuando" name="cuando">
+                <option>Hoy o mañana</option>
+                <option selected>Esta semana</option>
+                <option>Este fin de semana</option>
+                <option>La próxima semana</option>
+                <option>Aún no lo sé, quiero coordinar</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="two">
+            <div>
+              <label for="modelo">Modelo que te interesa <span class="opt">(opcional)</span></label>
+              <select id="modelo" name="modelo">
+                <option value="">Todavía no lo defino</option>
+                <option>Refugio 50 m²</option>
+                <option>Villa Costera 88 m²</option>
+                <option>Borde Lago 130 m²</option>
+                <option>Llanquihue 218 m²</option>
+                <option>Otro modelo del catálogo</option>
+                <option>Proyecto a medida</option>
+              </select>
+            </div>
+            <div>
+              <label for="terreno">¿Ya tienes terreno?</label>
+              <select id="terreno" name="terreno">
+                <option>Sí, ya tengo terreno</option>
+                <option>Estoy buscando terreno</option>
+                <option>No todavía</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-foot">
+          <button class="btn btn-wide" type="submit" data-cta="form">
+            Agenda tu visita
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.4A10 10 0 1 0 12 2zm4.9 13.4c-.2.6-1.2 1.2-1.7 1.2-.4 0-1 .1-3.2-.9-2.4-1.1-3.9-3.7-4-3.9-.1-.2-.9-1.3-.9-2.4 0-1.1.6-1.7.8-1.9.2-.2.4-.3.7-.3h.5c.2 0 .4 0 .6.4l.8 1.9c.1.2 0 .4-.1.5l-.3.4c-.1.1-.3.3-.1.6.1.3.6 1.1 1.3 1.7.9.8 1.6 1 1.9 1.2.2.1.4 0 .5-.1l.6-.7c.2-.2.4-.1.6 0l1.8.9c.2.1.4.2.4.4 0 .2 0 .8-.2 1.1z"/></svg>
+          </button>
+          <p class="legal">Se abrirá WhatsApp con tu mensaje escrito. Al enviarlo aceptas que te contactemos para coordinar la visita, según nuestra <a href="https://www.tucasafacil.cl/politicas-de-privacidad/" target="_blank" rel="noopener">política de privacidad</a>.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= FAQ ======================= -->
+<section class="sec">
+  <div class="wrap">
+    <span class="eyebrow">Antes de que preguntes</span>
+    <h2 class="h2" style="margin-top:20px;text-align:center">Lo que todos consultan</h2>
+
+    <div class="faq">
+      <details open>
+        <summary>¿La visita tiene algún costo o compromiso?</summary>
+        <p>Ninguno. Vienes, recorres, preguntas todo y te vas con tu cotización. Si no es el momento de construir, nos lo dices y quedamos en contacto. No firmas nada en la visita.</p>
+      </details>
+      <details>
+        <summary>¿Puedo ir sin agendar?</summary>
+        <p>Puedes, el showroom está abierto en horario de atención. Pero agendando te reservamos un asesor a tu hora, evitas esperar cuando hay varias familias y llegamos con la información de tu proyecto preparada.</p>
+      </details>
+      <details>
+        <summary>No tengo terreno todavía. ¿Igual me sirve ir?</summary>
+        <p>Sí, y a menudo es el mejor momento. Saber qué modelo te acomoda y qué requisitos tiene el terreno —accesos, pendiente, superficie— te evita comprar un sitio donde la casa que quieres no cabe.</p>
+      </details>
+      <details>
+        <summary>¿Una casa prefabricada es de menor calidad que una tradicional?</summary>
+        <p>Son cosas distintas. Nuestras viviendas son construcción industrializada en Panel SIP: los paneles se fabrican con precisión milimétrica en planta y llegan cortados a obra. Eso da muros de 114 mm con núcleo aislante, mejor comportamiento térmico y menos improvisación en terreno que una obra levantada pieza por pieza. Ven a golpear un muro y lo compruebas en tres segundos.</p>
+      </details>
+      <details>
+        <summary>¿Puedo ver todos los modelos del catálogo en el showroom?</summary>
+        <p>En el showroom están montados los modelos que ves más arriba. El resto del catálogo lo revisas en planos, muestras de terminación y recorridos digitales junto a tu asesor, y siempre puedes recorrer una casa montada de superficie parecida para dimensionar los espacios.</p>
+      </details>
+      <details>
+        <summary>¿Entregan e instalan fuera de la Región Metropolitana?</summary>
+        <p>Sí, entregamos en todo Chile. En la visita definimos traslado y montaje según la comuna de tu terreno, porque eso cambia el presupuesto y el plazo.</p>
+      </details>
+      <details>
+        <summary>¿Cómo se paga?</summary>
+        <p>Aceptamos WebpayPlus y tarjetas de crédito Visa, MasterCard, American Express, Diners y Magna, en hasta 48 cuotas. Las condiciones de tu caso las revisas con el asesor en la visita.</p>
+      </details>
+      <details>
+        <summary>¿Puedo llevar a mi arquitecto o constructor?</summary>
+        <p>Por favor, tráelo. Tenemos documentación técnica del sistema, planos de montaje y asesoría especializada; una conversación técnica en el showroom ahorra semanas de correos.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= CIERRE ======================= -->
+<section class="sec close-sec" style="background:var(--bone-2)">
+  <div class="wrap">
+    <span class="eyebrow" style="justify-content:center">Te esperamos</span>
+    <h2 style="margin-top:20px">La casa que estás imaginando ya está construida. Ven a verla.</h2>
+    <p class="lead">San Bernardo y Llanquihue. Con hora reservada, atención de un asesor y tu cotización el mismo día.</p>
+    <a class="btn" href="#agendar" data-cta="cierre">
+      Agenda tu visita
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+</section>
+
+</main>
+
+<!-- ======================= FOOTER ======================= -->
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div class="f-brand">
+        <img src="assets/logo-tcf-180.png" alt="Tu Casa Fácil" width="56" height="47">
+        <h4>Tu Casa Fácil</h4>
+        <p>Innovación y diseño, desde la estructura. Casas industrializadas de alto estándar y fábrica de Panel SIP.</p>
+      </div>
+      <div>
+        <h4>Showroom San Bernardo</h4>
+        <div class="f-links">
+          <p>Av. Pdte. Jorge Alessandri Rodríguez 20185</p>
+          <p>Lun–Vie 8:30–18:00 · Sáb 9:00–17:00 · Dom 10:00–16:00</p>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Av.+Pdte.+Jorge+Alessandri+Rodriguez+20185+San+Bernardo" target="_blank" rel="noopener">Ver en Google Maps</a>
+        </div>
+      </div>
+      <div>
+        <h4>Showroom Llanquihue</h4>
+        <div class="f-links">
+          <p>Parcela A, Fundo Totoral, Ruta 5 Sur Km 993</p>
+          <p>Lun–Jue 9:30–18:00 · Vie 9:30–17:00 · Sáb 10:30–16:30</p>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Fundo+Totoral+Ruta+5+Sur+Km+993+Llanquihue" target="_blank" rel="noopener">Ver en Google Maps</a>
+        </div>
+      </div>
+    </div>
+    <div class="f-bot">
+      <span>© <span id="yr">2026</span> Tu Casa Fácil · <a href="https://www.tucasafacil.cl" target="_blank" rel="noopener">tucasafacil.cl</a></span>
+      <span><a href="https://wa.me/56930094515" target="_blank" rel="noopener">WhatsApp +56 9 3009 4515</a> · <a href="mailto:ventas@tucasafacil.cl">ventas@tucasafacil.cl</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- ======================= STICKY CTA MOBILE ======================= -->
+<div class="sticky" id="sticky">
+  <div class="sticky-txt">
+    <b>Showroom abierto</b>
+    <span>San Bernardo · Llanquihue</span>
+  </div>
+  <a class="btn btn-sm" href="#agendar" data-cta="sticky">Agenda tu visita</a>
+</div>
+
+<script>
+(function(){
+  'use strict';
+
+  var WA_NUMBER = '56930094515';   // WhatsApp de agendamiento
+
+  /* ---------- Imágenes: degradación elegante si un archivo falla ---------- */
+  var FALLBACK_IMG = 'data:image/svg+xml;utf8,' + encodeURIComponent(
+    "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23EBE6DC'/><g fill='none' stroke='%23A9B3A2' stroke-width='7' stroke-linecap='round'><path d='M120 165 200 105l80 60v70h-48v-44h-64v44h-48z'/></g></svg>"
+  );
+  Array.prototype.forEach.call(document.querySelectorAll('img'), function(img){
+    img.addEventListener('error', function(){
+      if (img.dataset.fb) return;
+      img.dataset.fb = '1';
+      img.src = FALLBACK_IMG;
+      img.style.objectFit = 'contain';
+    });
+  });
+
+  var yr = document.getElementById('yr');
+  if (yr) yr.textContent = new Date().getFullYear();
+
+  /* ---------- Reveal on scroll ---------- */
+  var rvs = document.querySelectorAll('.rv');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, {rootMargin:'0px 0px -8% 0px', threshold:0.08});
+    Array.prototype.forEach.call(rvs, function(el, i){
+      el.style.transitionDelay = (Math.min(i % 4, 3) * 70) + 'ms';
+      io.observe(el);
+    });
+  } else {
+    Array.prototype.forEach.call(rvs, function(el){ el.classList.add('in'); });
+  }
+  /* Red de seguridad: nada queda invisible si el observer falla */
+  setTimeout(function(){
+    Array.prototype.forEach.call(rvs, function(el){ el.classList.add('in'); });
+  }, 2500);
+
+  /* ---------- Sticky CTA ---------- */
+  var sticky = document.getElementById('sticky');
+  var formSec = document.getElementById('agendar');
+  function onScroll(){
+    var y = window.pageYOffset || document.documentElement.scrollTop;
+    var formTop = formSec.getBoundingClientRect().top + y;
+    sticky.classList.toggle('on', y > 520 && y + window.innerHeight < formTop + 260);
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  window.addEventListener('resize', onScroll);
+  onScroll();
+
+  /* ---------- Selector de sede (tarjetas <-> select del formulario) ---------- */
+  var sedeRadios = document.querySelectorAll('input[name="sede-pick"]');
+  var sedeSelect = document.getElementById('sede');
+  function paintSedes(value){
+    Array.prototype.forEach.call(sedeRadios, function(r){
+      var on = r.value === value;
+      r.checked = on;
+      r.closest('.sede').classList.toggle('is-on', on);
+    });
+  }
+  Array.prototype.forEach.call(sedeRadios, function(r){
+    r.addEventListener('change', function(){
+      if (!r.checked) return;
+      sedeSelect.value = r.value;
+      paintSedes(r.value);
+    });
+  });
+  sedeSelect.addEventListener('change', function(){ paintSedes(sedeSelect.value); });
+  paintSedes(sedeSelect.value);
+
+  /* ---------- Tracking de CTA ---------- */
+  function track(where){
+    try {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({event:'agendar_visita', cta_ubicacion: where});
+      if (typeof window.gtag === 'function') window.gtag('event','generate_lead',{cta_ubicacion: where});
+      if (typeof window.fbq === 'function') window.fbq('track','Lead',{content_name:'Agenda visita showroom', source: where});
+    } catch(e){}
+  }
+  Array.prototype.forEach.call(document.querySelectorAll('[data-cta]'), function(el){
+    el.addEventListener('click', function(){ track(el.dataset.cta); });
+  });
+
+  /* ---------- Envío: arma el mensaje de WhatsApp ---------- */
+  var f = document.getElementById('f');
+  var nombre = document.getElementById('nombre');
+
+  nombre.addEventListener('input', function(){
+    if (nombre.value.trim().length >= 2) nombre.removeAttribute('aria-invalid');
+  });
+
+  f.addEventListener('submit', function(ev){
+    ev.preventDefault();
+
+    if (nombre.value.trim().length < 2) {
+      nombre.setAttribute('aria-invalid','true');
+      nombre.focus();
+      return;
+    }
+
+    var d = {
+      nombre:  nombre.value.trim(),
+      sede:    document.getElementById('sede').value,
+      cuando:  document.getElementById('cuando').value,
+      modelo:  document.getElementById('modelo').value,
+      terreno: document.getElementById('terreno').value
+    };
+
+    var lines = [
+      '¡Hola Tu Casa Fácil! Quiero agendar una visita al showroom.',
+      '',
+      'Nombre: ' + d.nombre,
+      'Showroom: ' + d.sede,
+      'Cuándo me acomoda: ' + d.cuando
+    ];
+    if (d.modelo) lines.push('Modelo que me interesa: ' + d.modelo);
+    lines.push('Terreno: ' + d.terreno);
+    lines.push('');
+    lines.push('(Solicitud enviada desde la página de agendamiento)');
+
+    track('form_enviado');
+    window.open('https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(lines.join('\n')), '_blank', 'noopener');
+  });
+})();
+</script>
+</body>
+</html>
