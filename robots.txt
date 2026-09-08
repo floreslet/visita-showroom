@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://visita-showroom.vercel.app/sitemap.xml
