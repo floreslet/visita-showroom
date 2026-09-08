@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Agenda tu visita al Showroom | Tu Casa Fácil</title>
 <meta name="description" content="Recorre casas reales en Panel SIP, sal con tu cotización el mismo día y conoce el beneficio para visitas agendadas. Showroom en San Bernardo y Llanquihue. Agenda tu visita por WhatsApp.">
-<link rel="canonical" href="https://showroom.tucasafacil.cl/">
+<link rel="canonical" href="https://visita-showroom.vercel.app/">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#0B0D10">
 
@@ -15,8 +15,8 @@
 <meta property="og:site_name" content="Tu Casa Fácil">
 <meta property="og:title" content="Camina dentro de tu futura casa. Agenda tu visita al showroom.">
 <meta property="og:description" content="Casas reales en Panel SIP que puedes recorrer, tocar y medir. Cotización el mismo día. San Bernardo y Llanquihue.">
-<meta property="og:url" content="https://showroom.tucasafacil.cl/">
-<meta property="og:image" content="https://showroom.tucasafacil.cl/assets/og-showroom.jpg">
+<meta property="og:url" content="https://visita-showroom.vercel.app/">
+<meta property="og:image" content="https://visita-showroom.vercel.app/og-showroom.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
@@ -25,8 +25,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-<link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png">
-<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="64x64" href="favicon-64.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 
 <!-- ===================== GOOGLE ANALYTICS 4 (activo) ===================== -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-J12VB8HEGJ"></script>
@@ -382,9 +382,11 @@ input,select{
 }
 select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%235D626C' stroke-width='2.5' stroke-linecap='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 15px center;padding-right:42px}
 input:focus,select:focus{outline:0;border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft)}
-input[aria-invalid="true"]{border-color:#C0392B;box-shadow:0 0 0 4px rgba(192,57,43,.12)}
+input[aria-invalid="true"],select[aria-invalid="true"]{border-color:#C0392B;box-shadow:0 0 0 4px rgba(192,57,43,.12)}
 .err{display:none;margin-top:6px;font-size:13px;font-weight:700;color:#C0392B}
-input[aria-invalid="true"] ~ .err{display:block}
+input[aria-invalid="true"] ~ .err,select[aria-invalid="true"] ~ .err{display:block}
+.req{color:var(--accent-ink);font-weight:800;margin-left:2px}
+.all-req{margin-top:14px;font-size:12.5px;font-weight:700;color:var(--muted)}
 .form-foot{margin-top:24px;display:grid;gap:13px;justify-items:center}
 .legal{font-size:12.5px;color:var(--muted);text-align:center;line-height:1.5}
 .legal a{color:var(--accent-ink)}
@@ -450,7 +452,7 @@ footer{background:var(--ink);color:var(--muted-d);padding:52px 0 120px;border-to
 <header>
   <div class="wrap nav">
     <a class="brand" href="#top">
-      <img src="assets/logo-tcf-180.png" alt="Tu Casa Fácil" width="44" height="37">
+      <img src="logo-tcf-180.png" alt="Tu Casa Fácil" width="44" height="37">
       <span class="brand-txt"><b>TU CASA FÁCIL</b><span>Showroom</span></span>
     </a>
     <div class="nav-right">
@@ -504,15 +506,15 @@ footer{background:var(--ink);color:var(--muted-d);padding:52px 0 120px;border-to
       </div>
       <div class="shots">
         <div class="shot tall">
-          <img src="assets/borde-lago-130.webp" alt="Modelo Borde Lago de 130 m² de Tu Casa Fácil al atardecer" width="1200" height="900" loading="eager" fetchpriority="high">
+          <img src="borde-lago-130.webp" alt="Modelo Borde Lago de 130 m² de Tu Casa Fácil, fachada en madera azul profundo" width="1200" height="900" loading="eager" fetchpriority="high">
           <span class="shot-tag">Borde Lago · 130 m²</span>
         </div>
         <div class="shot small">
-          <img src="assets/llanquihue-218.webp" alt="Modelo Llanquihue de 218 m² de Tu Casa Fácil en un día de verano" width="1200" height="900" loading="lazy">
+          <img src="llanquihue-218.webp" alt="Modelo Llanquihue de 218 m² de Tu Casa Fácil en un día de verano" width="1200" height="900" loading="lazy">
           <span class="shot-tag">Llanquihue · 218 m²</span>
         </div>
         <div class="shot small">
-          <img src="assets/villa-costera-88.webp" alt="Modelo Villa Costera de 88 m² de Tu Casa Fácil junto a una piscina" width="1200" height="900" loading="lazy">
+          <img src="villa-costera-88.webp" alt="Modelo Villa Costera de 88 m² de Tu Casa Fácil junto a una piscina" width="1200" height="900" loading="lazy">
           <span class="shot-tag">Villa Costera · 88 m²</span>
         </div>
       </div>
@@ -526,7 +528,7 @@ footer{background:var(--ink);color:var(--muted-d);padding:52px 0 120px;border-to
     <div class="strip-i"><b>2</b><span>showrooms abiertos</span></div>
     <div class="strip-i"><b>4</b><span>casas montadas para recorrer</span></div>
     <div class="strip-i"><b>50%</b><span>menos tiempo de obra*</span></div>
-    <div class="strip-i"><b>Todo Chile</b><span>entrega y montaje</span></div>
+    <div class="strip-i"><b>Todo Chile</b><span>entrega y armado</span></div>
   </div>
 </section>
 
@@ -625,7 +627,7 @@ footer{background:var(--ink);color:var(--muted-d);padding:52px 0 120px;border-to
       <div class="models">
         <article class="m-c wide rv">
           <div class="m-img">
-            <img src="assets/llanquihue-218.webp" alt="Modelo Llanquihue 218 m² de Tu Casa Fácil, fachada frontal en un día de verano" width="1200" height="900" loading="lazy">
+            <img src="llanquihue-218.webp" alt="Modelo Llanquihue 218 m² de Tu Casa Fácil, fachada frontal en un día de verano" width="1200" height="900" loading="lazy">
             <span class="flag">Línea Llanquihue</span>
           </div>
           <div class="m-b">
@@ -658,17 +660,18 @@ footer{background:var(--ink);color:var(--muted-d);padding:52px 0 120px;border-to
       <div class="models three">
         <article class="m-c rv">
           <div class="m-img">
-            <img src="assets/borde-lago-130.webp" alt="Modelo Borde Lago 130 m² de Tu Casa Fácil con porche y estructura de madera a la vista" width="1200" height="900" loading="lazy">
+            <img src="borde-lago-130.webp" alt="Modelo Borde Lago 130 m² de Tu Casa Fácil, fachada en madera azul profundo con terraza" width="1200" height="900" loading="lazy">
             <span class="flag">La más amplia</span>
           </div>
           <div class="m-b">
             <h3>Borde Lago 130 m²</h3>
             <p class="m-sqm">130 m² construidos</p>
-            <p class="m-desc">Casa de un piso en volúmenes quebrados, con porche cubierto de estructura de madera a la vista y ventanales corredera al jardín.</p>
+            <p class="m-desc">Un piso en planta alargada, revestimiento de madera en azul profundo y una hilera de ventanales corredera que abren la casa completa a la terraza.</p>
             <div class="m-meta">
               <span class="chip">Un piso</span>
-              <span class="chip">Porche cubierto</span>
-              <span class="chip">Madera a la vista</span>
+              <span class="chip">Planta alargada</span>
+              <span class="chip">Ventanales corredera</span>
+              <span class="chip">Terraza continua</span>
               <span class="chip">Panel SIP 114 mm</span>
             </div>
           </div>
@@ -676,7 +679,7 @@ footer{background:var(--ink);color:var(--muted-d);padding:52px 0 120px;border-to
 
         <article class="m-c rv">
           <div class="m-img">
-            <img src="assets/villa-costera-88.webp" alt="Modelo Villa Costera 88 m² de Tu Casa Fácil con deck y piscina" width="1200" height="900" loading="lazy">
+            <img src="villa-costera-88.webp" alt="Modelo Villa Costera 88 m² de Tu Casa Fácil con deck y piscina" width="1200" height="900" loading="lazy">
             <span class="flag">Techo galpón</span>
           </div>
           <div class="m-b">
@@ -694,7 +697,7 @@ footer{background:var(--ink);color:var(--muted-d);padding:52px 0 120px;border-to
 
         <article class="m-c rv">
           <div class="m-img">
-            <img src="assets/refugio-50.webp" alt="Modelo Refugio 50 m² de Tu Casa Fácil, volumen compacto con revestimiento oscuro" width="1200" height="900" loading="lazy">
+            <img src="refugio-50.webp" alt="Modelo Refugio 50 m² de Tu Casa Fácil, volumen compacto con revestimiento oscuro" width="1200" height="900" loading="lazy">
             <span class="flag">Formato compacto</span>
           </div>
           <div class="m-b">
@@ -751,8 +754,8 @@ footer{background:var(--ink);color:var(--muted-d);padding:52px 0 120px;border-to
 
     <div class="sedes">
       <div class="sede-box">
-        <label class="sede is-on">
-          <input type="radio" name="sede-pick" value="San Bernardo (Región Metropolitana)" checked>
+        <label class="sede">
+          <input type="radio" name="sede-pick" value="San Bernardo (Región Metropolitana)">
           <div class="sede-top">
             <div>
               <h3>San Bernardo</h3>
@@ -808,40 +811,46 @@ footer{background:var(--ink);color:var(--muted-d);padding:52px 0 120px;border-to
     <div class="form-card">
       <h3>Agenda tu visita al showroom</h3>
       <p class="fc-sub">Respondemos por WhatsApp dentro del horario de atención.</p>
+      <p class="all-req">Todos los campos son obligatorios.</p>
 
       <form id="f" novalidate>
         <div class="fields">
           <div>
-            <label for="nombre">Tu nombre</label>
+            <label for="nombre">Tu nombre <span class="req" aria-hidden="true">*</span></label>
             <input id="nombre" name="nombre" type="text" autocomplete="given-name" placeholder="Ej: Pamela Flores" required>
             <p class="err">Escribe tu nombre para que el asesor te salude bien.</p>
           </div>
 
           <div class="two">
             <div>
-              <label for="sede">Showroom</label>
-              <select id="sede" name="sede">
+              <label for="sede">Showroom <span class="req" aria-hidden="true">*</span></label>
+              <select id="sede" name="sede" required>
+                <option value="" selected>Elige un showroom</option>
                 <option value="San Bernardo (Región Metropolitana)">San Bernardo, RM</option>
                 <option value="Llanquihue (Región de Los Lagos)">Llanquihue, Los Lagos</option>
               </select>
+              <p class="err">Elige el showroom que quieres visitar.</p>
             </div>
             <div>
-              <label for="cuando">¿Cuándo te acomoda?</label>
-              <select id="cuando" name="cuando">
+              <label for="cuando">¿Cuándo te acomoda? <span class="req" aria-hidden="true">*</span></label>
+              <select id="cuando" name="cuando" required>
+                <option value="" selected>Elige una opción</option>
                 <option>Hoy o mañana</option>
-                <option selected>Esta semana</option>
+                <option>Esta semana</option>
                 <option>Este fin de semana</option>
                 <option>La próxima semana</option>
                 <option>Aún no lo sé, quiero coordinar</option>
               </select>
+              <p class="err">Cuéntanos cuándo te acomoda venir.</p>
             </div>
           </div>
 
           <div class="two">
             <div>
-              <label for="modelo">Modelo que te interesa <span class="opt">(opcional)</span></label>
-              <select id="modelo" name="modelo">
-                <option value="">Todavía no lo defino</option>
+              <label for="modelo">Modelo que te interesa <span class="req" aria-hidden="true">*</span></label>
+              <select id="modelo" name="modelo" required>
+                <option value="" selected>Elige una opción</option>
+                <option>Todavía no lo defino</option>
                 <option>Refugio 50 m²</option>
                 <option>Villa Costera 88 m²</option>
                 <option>Borde Lago 130 m²</option>
@@ -849,14 +858,17 @@ footer{background:var(--ink);color:var(--muted-d);padding:52px 0 120px;border-to
                 <option>Otro modelo del catálogo</option>
                 <option>Proyecto a medida</option>
               </select>
+              <p class="err">Elige un modelo. Si aún no lo defines, marca esa opción.</p>
             </div>
             <div>
-              <label for="terreno">¿Ya tienes terreno?</label>
-              <select id="terreno" name="terreno">
+              <label for="terreno">¿Ya tienes terreno? <span class="req" aria-hidden="true">*</span></label>
+              <select id="terreno" name="terreno" required>
+                <option value="" selected>Elige una opción</option>
                 <option>Sí, ya tengo terreno</option>
                 <option>Estoy buscando terreno</option>
                 <option>No todavía</option>
               </select>
+              <p class="err">Indícanos si ya tienes terreno.</p>
             </div>
           </div>
         </div>
@@ -902,7 +914,7 @@ footer{background:var(--ink);color:var(--muted-d);padding:52px 0 120px;border-to
       </details>
       <details>
         <summary>¿Entregan e instalan fuera de la Región Metropolitana?</summary>
-        <p>Sí, entregamos en todo Chile. En la visita definimos traslado y montaje según la comuna de tu terreno, porque eso cambia el presupuesto y el plazo.</p>
+        <p>Sí, entregamos en todo Chile. En la visita definimos traslado y armado según la comuna de tu terreno, porque eso cambia el presupuesto y el plazo.</p>
       </details>
       <details>
         <summary>¿Cómo se paga?</summary>
@@ -910,7 +922,7 @@ footer{background:var(--ink);color:var(--muted-d);padding:52px 0 120px;border-to
       </details>
       <details>
         <summary>¿Puedo llevar a mi arquitecto o constructor?</summary>
-        <p>Por favor, tráelo. Tenemos documentación técnica del sistema, planos de montaje y asesoría especializada; una conversación técnica en el showroom ahorra semanas de correos.</p>
+        <p>Por favor, tráelo. Tenemos documentación técnica del sistema, planos de armado y asesoría especializada; una conversación técnica en el showroom ahorra semanas de correos.</p>
       </details>
     </div>
   </div>
@@ -936,7 +948,7 @@ footer{background:var(--ink);color:var(--muted-d);padding:52px 0 120px;border-to
   <div class="wrap">
     <div class="f-grid">
       <div class="f-brand">
-        <img src="assets/logo-tcf-180.png" alt="Tu Casa Fácil" width="56" height="47">
+        <img src="logo-tcf-180.png" alt="Tu Casa Fácil" width="56" height="47">
         <h4>Tu Casa Fácil</h4>
         <p>Innovación y diseño, desde la estructura. Casas industrializadas de alto estándar y fábrica de Panel SIP.</p>
       </div>
@@ -981,7 +993,10 @@ footer{background:var(--ink);color:var(--muted-d);padding:52px 0 120px;border-to
 
   /* ---------- Imágenes: degradación elegante si un archivo falla ---------- */
   var FALLBACK_IMG = 'data:image/svg+xml;utf8,' + encodeURIComponent(
-    "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23EBE6DC'/><g fill='none' stroke='%23A9B3A2' stroke-width='7' stroke-linecap='round'><path d='M120 165 200 105l80 60v70h-48v-44h-64v44h-48z'/></g></svg>"
+    "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'>" +
+    "<rect width='400' height='300' fill='#EBE6DC'/>" +
+    "<g fill='none' stroke='#A9B3A2' stroke-width='7' stroke-linecap='round'>" +
+    "<path d='M120 165 200 105l80 60v70h-48v-44h-64v44h-48z'/></g></svg>"
   );
   Array.prototype.forEach.call(document.querySelectorAll('img'), function(img){
     img.addEventListener('error', function(){
@@ -1045,7 +1060,7 @@ footer{background:var(--ink);color:var(--muted-d);padding:52px 0 120px;border-to
     });
   });
   sedeSelect.addEventListener('change', function(){ paintSedes(sedeSelect.value); });
-  paintSedes(sedeSelect.value);
+  paintSedes(sedeSelect.value);   /* vacio al cargar: ninguna sede preseleccionada */
 
   /* ---------- Tracking de CTA ---------- */
   function track(where){
@@ -1060,46 +1075,68 @@ footer{background:var(--ink);color:var(--muted-d);padding:52px 0 120px;border-to
     el.addEventListener('click', function(){ track(el.dataset.cta); });
   });
 
-  /* ---------- Envío: arma el mensaje de WhatsApp ---------- */
+  /* ---------- Envío: valida los 5 campos y arma el mensaje de WhatsApp ---------- */
   var f = document.getElementById('f');
-  var nombre = document.getElementById('nombre');
 
-  nombre.addEventListener('input', function(){
-    if (nombre.value.trim().length >= 2) nombre.removeAttribute('aria-invalid');
+  /* Todos los campos son obligatorios. El pedido de marketing fue explicito:
+     nada de campos opcionales. "Modelo" mantiene la opcion "Todavia no lo defino"
+     como valor valido, para que quien no lo tenga decidido pueda responder con
+     la verdad en vez de abandonar el formulario. */
+  var CAMPOS = ['nombre', 'sede', 'cuando', 'modelo', 'terreno'];
+
+  function valor(id){
+    var el = document.getElementById(id);
+    return (el.value || '').trim();
+  }
+
+  function marcar(id, ok){
+    var el = document.getElementById(id);
+    if (ok) el.removeAttribute('aria-invalid');
+    else el.setAttribute('aria-invalid', 'true');
+  }
+
+  /* El error de un campo desaparece en cuanto se corrige */
+  CAMPOS.forEach(function(id){
+    var el = document.getElementById(id);
+    var ev = el.tagName === 'SELECT' ? 'change' : 'input';
+    el.addEventListener(ev, function(){
+      if (valor(id).length >= (id === 'nombre' ? 2 : 1)) marcar(id, true);
+    });
   });
 
   f.addEventListener('submit', function(ev){
     ev.preventDefault();
 
-    if (nombre.value.trim().length < 2) {
-      nombre.setAttribute('aria-invalid','true');
-      nombre.focus();
-      return;
-    }
+    var primerFallo = null;
+    CAMPOS.forEach(function(id){
+      var ok = id === 'nombre' ? valor(id).length >= 2 : valor(id).length > 0;
+      marcar(id, ok);
+      if (!ok && !primerFallo) primerFallo = id;
+    });
 
-    var d = {
-      nombre:  nombre.value.trim(),
-      sede:    document.getElementById('sede').value,
-      cuando:  document.getElementById('cuando').value,
-      modelo:  document.getElementById('modelo').value,
-      terreno: document.getElementById('terreno').value
-    };
+    if (primerFallo) {
+      var el = document.getElementById(primerFallo);
+      try { el.scrollIntoView({block:'center', behavior:'smooth'}); } catch(e){ el.scrollIntoView(); }
+      el.focus({preventScroll:true});
+      return;   /* nada de tracking ni de WhatsApp si el formulario esta incompleto */
+    }
 
     var lines = [
       '¡Hola Tu Casa Fácil! Quiero agendar una visita al showroom.',
       '',
-      'Nombre: ' + d.nombre,
-      'Showroom: ' + d.sede,
-      'Cuándo me acomoda: ' + d.cuando
+      'Nombre: ' + valor('nombre'),
+      'Showroom: ' + valor('sede'),
+      'Cuándo me acomoda: ' + valor('cuando'),
+      'Modelo que me interesa: ' + valor('modelo'),
+      'Terreno: ' + valor('terreno'),
+      '',
+      '(Solicitud enviada desde la página de agendamiento)'
     ];
-    if (d.modelo) lines.push('Modelo que me interesa: ' + d.modelo);
-    lines.push('Terreno: ' + d.terreno);
-    lines.push('');
-    lines.push('(Solicitud enviada desde la página de agendamiento)');
 
     track('form_enviado');
     window.open('https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(lines.join('\n')), '_blank', 'noopener');
   });
+
 })();
 </script>
 </body>
