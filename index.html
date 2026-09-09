@@ -27,6 +27,8 @@
 
 <link rel="icon" type="image/png" sizes="64x64" href="favicon-64.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Formulario HubSpot (portal 9292440) -->
+<script src="https://js.hsforms.net/forms/embed/9292440.js" defer></script>
 
 <!-- ===================== GOOGLE ANALYTICS 4 (activo) ===================== -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-J12VB8HEGJ"></script>
@@ -794,13 +796,13 @@ footer{background:var(--ink);color:var(--muted-d);padding:52px 0 120px;border-to
   </div>
 </section>
 
-<!-- ======================= FORMULARIO ======================= -->
+<!-- ======================= FORMULARIO (HubSpot) ======================= -->
 <section class="sec dark form-sec" id="agendar">
   <div class="wrap form-grid">
     <div class="form-copy">
       <span class="eyebrow">Último paso</span>
       <h2 style="margin-top:20px">Agenda tu visita en 30 segundos.</h2>
-      <p class="lead" style="margin-top:18px">Completa los datos y se abre WhatsApp con tu mensaje listo. Un ejecutivo te confirma día y hora.</p>
+      <p class="lead" style="margin-top:18px">Déjanos tus datos y un asesor te confirma día y hora en el showroom que elijas.</p>
       <ul class="form-why">
         <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Sin formularios eternos y sin llamados insistentes.</span></li>
         <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Hora reservada: te atiende un asesor, no una fila.</span></li>
@@ -810,81 +812,24 @@ footer{background:var(--ink);color:var(--muted-d);padding:52px 0 120px;border-to
 
     <div class="form-card">
       <h3>Agenda tu visita al showroom</h3>
-      <p class="fc-sub">Respondemos por WhatsApp dentro del horario de atención.</p>
-      <p class="all-req">Todos los campos son obligatorios.</p>
+      <p class="fc-sub">Te contactamos dentro del horario de atención.</p>
 
-      <form id="f" novalidate>
-        <div class="fields">
-          <div>
-            <label for="nombre">Tu nombre <span class="req" aria-hidden="true">*</span></label>
-            <input id="nombre" name="nombre" type="text" autocomplete="given-name" placeholder="Ej: Pamela Flores" required>
-            <p class="err">Escribe tu nombre para que el asesor te salude bien.</p>
-          </div>
+      <!-- Formulario HubSpot · portal 9292440 -->
+      <div class="hs-wrap">
+        <div class="hs-form-frame"
+             data-region="na1"
+             data-form-id="c1ebf1c1-06ad-4342-b03d-8f748bdf11ac"
+             data-portal-id="9292440"></div>
+        <noscript>
+          <p class="legal">Necesitas activar JavaScript para ver el formulario. También puedes escribirnos a
+          <a href="mailto:ventas@tucasafacil.cl">ventas@tucasafacil.cl</a>.</p>
+        </noscript>
+      </div>
 
-          <div class="two">
-            <div>
-              <label for="sede">Showroom <span class="req" aria-hidden="true">*</span></label>
-              <select id="sede" name="sede" required>
-                <option value="" selected>Elige un showroom</option>
-                <option value="San Bernardo (Región Metropolitana)">San Bernardo, RM</option>
-                <option value="Llanquihue (Región de Los Lagos)">Llanquihue, Los Lagos</option>
-              </select>
-              <p class="err">Elige el showroom que quieres visitar.</p>
-            </div>
-            <div>
-              <label for="cuando">¿Cuándo te acomoda? <span class="req" aria-hidden="true">*</span></label>
-              <select id="cuando" name="cuando" required>
-                <option value="" selected>Elige una opción</option>
-                <option>Hoy o mañana</option>
-                <option>Esta semana</option>
-                <option>Este fin de semana</option>
-                <option>La próxima semana</option>
-                <option>Aún no lo sé, quiero coordinar</option>
-              </select>
-              <p class="err">Cuéntanos cuándo te acomoda venir.</p>
-            </div>
-          </div>
-
-          <div class="two">
-            <div>
-              <label for="modelo">Modelo que te interesa <span class="req" aria-hidden="true">*</span></label>
-              <select id="modelo" name="modelo" required>
-                <option value="" selected>Elige una opción</option>
-                <option>Todavía no lo defino</option>
-                <option>Refugio 50 m²</option>
-                <option>Villa Costera 88 m²</option>
-                <option>Borde Lago 130 m²</option>
-                <option>Llanquihue 218 m²</option>
-                <option>Otro modelo del catálogo</option>
-                <option>Proyecto a medida</option>
-              </select>
-              <p class="err">Elige un modelo. Si aún no lo defines, marca esa opción.</p>
-            </div>
-            <div>
-              <label for="terreno">¿Ya tienes terreno? <span class="req" aria-hidden="true">*</span></label>
-              <select id="terreno" name="terreno" required>
-                <option value="" selected>Elige una opción</option>
-                <option>Sí, ya tengo terreno</option>
-                <option>Estoy buscando terreno</option>
-                <option>No todavía</option>
-              </select>
-              <p class="err">Indícanos si ya tienes terreno.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="form-foot">
-          <button class="btn btn-wide" type="submit" data-cta="form">
-            Agenda tu visita
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.4A10 10 0 1 0 12 2zm4.9 13.4c-.2.6-1.2 1.2-1.7 1.2-.4 0-1 .1-3.2-.9-2.4-1.1-3.9-3.7-4-3.9-.1-.2-.9-1.3-.9-2.4 0-1.1.6-1.7.8-1.9.2-.2.4-.3.7-.3h.5c.2 0 .4 0 .6.4l.8 1.9c.1.2 0 .4-.1.5l-.3.4c-.1.1-.3.3-.1.6.1.3.6 1.1 1.3 1.7.9.8 1.6 1 1.9 1.2.2.1.4 0 .5-.1l.6-.7c.2-.2.4-.1.6 0l1.8.9c.2.1.4.2.4.4 0 .2 0 .8-.2 1.1z"/></svg>
-          </button>
-          <p class="legal">Se abrirá WhatsApp con tu mensaje escrito. Al enviarlo aceptas que te contactemos para coordinar la visita, según nuestra <a href="https://www.tucasafacil.cl/politicas-de-privacidad/" target="_blank" rel="noopener">política de privacidad</a>.</p>
-        </div>
-      </form>
+      <p class="legal">Al enviar tus datos aceptas que te contactemos para coordinar la visita, según nuestra <a href="https://www.tucasafacil.cl/politicas-de-privacidad/" target="_blank" rel="noopener">política de privacidad</a>.</p>
     </div>
   </div>
 </section>
-
 <!-- ======================= FAQ ======================= -->
 <section class="sec">
   <div class="wrap">
